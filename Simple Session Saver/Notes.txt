@@ -1,0 +1,25 @@
+Tricky stuff:
+fa = font awesome
+
+>It's better to use the title attribute on the fa icon element instead of the button element because once you activate it you want the tooltip to go away
+
+Steps to changing the secure lock icon:
+>First add a click event listener to the selected button from the DOM in the JS
+1. Remove the unlocked icon on click
+a. Add id="preClickLock" to the unlocked fa icon 
+b. Select that element by storing it into a variable called "preClickLock" in the JS
+c. Apply the method: removeChild(preClickLock) to the the button
+
+2. Add the unlocked icon on click
+>First things first, this icon must be contained inside a span so that the icon can be properly hidden
+>Then have the button fa icon outside of the button else the button will be seen right alongside the unlocked icon
+a. Add a class to the span with visibility: hidden
+b. Add id="postClickLock" to the span
+c. Select the span in the JS 
+d. Remove the class that has visibility: hidden when the button is clicked and at the same time apply the method appendChild(postClickLock) to the button
+
+Steps to changing the shadow color:
+1. 
+
+Steps to showing the hidden message:
+1.
